@@ -1,6 +1,6 @@
-app = angular.module('obogMatcher', [])
+app = angular.module('obogmatcher', [])
 
-app.config($httpProvider) ->
+app.config ($httpProvider) ->
   authToken = $("meta[name=\"csrf-token\"]").attr("content")
   $httpProvider.defaults.headers.common["X-CSRF-TOKEN"] = authToken
 
