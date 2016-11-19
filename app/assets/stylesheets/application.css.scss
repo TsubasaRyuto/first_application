@@ -12,13 +12,7 @@
  *
  *= require_tree .
  *= require_self
- *= require bootstrap.min
  */
- 
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
-@font-face {
-  font-family: 'Glyphicons Halfings';
-  src: url('/assets/font/glyphicons-halflings-regular.eot');
-  src: url('/assets/font/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/font/glyphicons-halflings-regular.woff') format('woff'), url('/assets/font/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/font/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
+@import "bootstrap-sprockets";
+@import "bootstrap";
