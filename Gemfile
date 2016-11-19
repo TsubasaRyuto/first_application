@@ -12,6 +12,8 @@ gem 'jquery-turbolinks', '2.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.6.0'
+gem 'omniauth', '1.3.1'
+gem 'omniauth-facebook', '4.0.0'
 # gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
