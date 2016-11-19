@@ -1,4 +1,4 @@
-app = angular.module('obogmatcher', [])
+app = angular.module('obogmatcher', ['ui.bootstrap'])
 
 app.config ($httpProvider) ->
   authToken = $("meta[name=\"csrf-token\"]").attr("content")
