@@ -1,13 +1,13 @@
 class CreateUsers < ActiveRecord::Migration[5.0]
   def change
     create_table :users do |t|
-      t.references :graduating_class, null: false
+      t.references :graduating_class
       t.string :provider, null: false
       t.string :uid, null: false
       t.string :name, null: false
-      t.string :nickname, null: false
-      t.string :email, null: false
-      t.string :gender, null: false
+      t.string :nickname
+      t.string :email
+      t.string :gender
       t.string :url
       t.string :image_url
       t.string :birthplace
@@ -17,7 +17,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.text :note
 
       t.timestamps
-      t.index [:uid], unique: true
+      t.index [:provider, :uid], unique: true
     end
   end
 end

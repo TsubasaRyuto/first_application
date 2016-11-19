@@ -19,13 +19,13 @@ ActiveRecord::Schema.define(version: 20161119100201) do
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "graduating_class_id",               null: false
+    t.integer  "graduating_class_id"
     t.string   "provider",                          null: false
     t.string   "uid",                               null: false
     t.string   "name",                              null: false
-    t.string   "nickname",                          null: false
-    t.string   "email",                             null: false
-    t.string   "gender",                            null: false
+    t.string   "nickname"
+    t.string   "email"
+    t.string   "gender"
     t.string   "url"
     t.string   "image_url"
     t.string   "birthplace"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20161119100201) do
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
     t.index ["graduating_class_id"], name: "index_users_on_graduating_class_id", using: :btree
-    t.index ["uid"], name: "index_users_on_uid", unique: true, using: :btree
+    t.index ["provider", "uid"], name: "index_users_on_provider_and_uid", unique: true, using: :btree
   end
 
 end
