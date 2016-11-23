@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+GraduatingClass.create(graduating_class: '舛井先生')
+for i in 1..8
+  graduating_class = "第#{i}期生"
+  GraduatingClass.create(graduating_class: graduating_class)
+end
