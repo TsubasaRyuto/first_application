@@ -7,10 +7,10 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :name, null: false
       t.string :nickname
       t.string :email
-      t.string :gender
+      t.integer :gender
       t.string :url
       t.string :image_url
-      t.string :birthplace
+      t.integer :birthplace
       t.string :industry
       t.string :company
       t.text :useful_things

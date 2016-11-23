@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161119100201) do
+ActiveRecord::Schema.define(version: 20161123000828) do
 
   create_table "graduating_classes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "class",      null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "graduating_class", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -25,10 +25,10 @@ ActiveRecord::Schema.define(version: 20161119100201) do
     t.string   "name",                              null: false
     t.string   "nickname"
     t.string   "email"
-    t.string   "gender"
+    t.integer  "gender"
     t.string   "url"
     t.string   "image_url"
-    t.string   "birthplace"
+    t.integer  "birthplace"
     t.string   "industry"
     t.string   "company"
     t.text     "useful_things",       limit: 65535
