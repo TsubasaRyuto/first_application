@@ -1,3 +1,51 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.home-main {
+  position: relative;
+  background: #006400;
+  padding: 10%;
+
+
+  .main-mess {
+    color: white;
+    text-align: center;
+
+    h3 {
+      font-size: 300%;
+      margin-bottom: 3%;
+    }
+
+    p {
+      font-size: 200%;
+    }
+  }
+
+  .login-bt {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 38%;
+  }
+}
+
+.home-mess {
+
+  .mess {
+    display: inline-block;
+    box-shadow: 1px 0px 2px;
+    height: 230px;
+    background-color: white;
+    margin-left: 11%;
+    margin-top: -5%;
+
+    .glyphicon {
+      font-size: 430%;
+      color: #006400;
+      margin-left: 40%;
+      margin-top: 8%;
+      margin-bottom: 10%;
+    }
+  }
+}
