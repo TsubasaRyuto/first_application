@@ -1,1 +1,34 @@
-<h1>Welcom to Masui seminar</h1>
+<section class="home-main">
+  <div class="main-mess">
+    <h3>I ♥ Mゼミ</h3>
+    <p>北海道での出会いを大切に。。。</p>
+  </div>
+
+  <div class="login-bt">
+    <% if logged_in? %>
+      <%= link_to "Log out",  logout_path, method: "delete", class: 'btn btn-primary col-md-4' %>
+    <% else %>
+      <%= link_to 'facebookでログイン', '/auth/facebook', class: 'btn btn-primary col-md-4' %>
+    <% end %>
+  </div>
+</section>
+
+<section class="home-mess">
+  <div class="mess-class">
+    <div class="mess col-md-4">
+      <span class="glyphicon glyphicon-user"></span>
+      <p>
+        今まで以上に円滑な交流が出来るようになる。
+        先輩方のバックグラウンドを見て話してみたいなどあれば、直接アプローチをしてみよう。
+        <br>この繋がりを上手に利用し合うことができる。
+      </p>
+    </div>
+    <div class="mess col-md-4">
+      <span class="glyphicon glyphicon-warning-sign"></span>
+      <p>
+        困った時は助け合い。例えば、就活どうしたらいい？という時は先輩からアドバイスをもらおう。
+        また、こんな業界興味あるけどどうしたらいいかわからない。そんな時は、先輩方に聞くのが一番。
+      </p>
+    </div>
+  </div>
+</section>
