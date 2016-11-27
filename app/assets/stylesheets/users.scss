@@ -28,3 +28,113 @@
 .form-group {
   padding-bottom: 5%;
 }
+
+// user show
+.show-user-inf {
+  display: inline-block;
+  width: 100%;
+
+  .user-inf {
+    float: left;
+    padding-left: 5%;
+  }
+
+  .user-picture {
+    width: auto;
+    height: auto;
+    img {
+      border-radius: 5%;
+    }
+  }
+
+  .user-name {
+    font-size: 300%;
+    font-style: italic;
+    font-weight: lighter;
+  }
+}
+
+.user-other-inf {
+  padding-top: 20%;
+}
+
+// user index
+.users {
+  padding-top: 3%;
+
+  .graduating-class-index {
+    display: inline-block;
+    width: 100%;
+
+    .gc-head {
+      float: left;
+
+      li {
+        list-style: none;
+        float: left;
+        font-size: 150%;
+      }
+
+      .btn {
+        margin-left: 8%;
+        margin-top: 3%;
+      }
+    }
+  }
+
+  .panel-body {
+    padding-top: 7%;
+    .graduating-class-list {
+      list-style: none;
+      font-size: 165%;
+      padding-bottom: 5%;
+      text-align: center;
+
+      a {
+        color: #747474;
+
+        &:hover {
+          text-decoration: none;
+          color: #006400;
+        }
+      }
+    }
+  }
+}
+
+.users-list {
+  .user-link {
+    .panel-heading {
+      height: 100%;
+
+      &:hover {
+      background-color: #a9a9a9;
+      color: white;
+      }
+    }
+  }
+  .user-index {
+    display: inline-block;
+    width: 100%;
+
+    .user-inf {
+      float: left;
+      padding-left: 5%;
+    }
+
+    .user-picture {
+      width: auto;
+      height: auto;
+
+      img {
+        border-radius: 5%;
+      }
+    }
+
+    .user-name {
+      font-size: 300%;
+      font-style: italic;
+      font-weight: lighter;
+    }
+  }
+}

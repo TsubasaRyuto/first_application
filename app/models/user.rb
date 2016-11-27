@@ -46,6 +46,8 @@ class User < ApplicationRecord
   validates :note, length: { maximum: 500 }, presence: true, on: :update
   validates :graduating_class, presence: true, on: :updae
 
+  scope :get_by_graduating_class, -> (graduating_class_id) { where(graduating_class_id: graduating_class_id) }
+
   def self.find_orcreate_from_auth_hash(auth_hash)
     provider = auth_hash[:provider]
     uid = auth_hash[:uid]
