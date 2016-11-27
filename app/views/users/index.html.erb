@@ -1,0 +1,71 @@
+<section class="users">
+  <div class="panel panel-default">
+    <div class="panel-heading graduating-class-index">
+      <div class="gc-head col-md-offset-1">
+        <h2>Mゼミ一覧</h2>
+      </div>
+    </div>
+    <div class="panel-body">
+      <section class="graduating-class-list" id="gcl">
+        <ul>
+          <% GraduatingClass.all.map{ |o| [o.graduating_class, o.id] }.each do |index| %>
+            <li class="col-md-4 graduating-class-list">
+              <%= link_to "#{index[0]}", users_path(graduating_class_id: index[1]) %>
+            </li>
+          <% end %>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+<% if params[:graduating_class_id].present? %>
+  <section class="users-list">
+    <div class="panel panel-default">
+      <div class="panel-heading user-index-title">
+        <div class="col-md-offset-1">
+          <h2><%= @graduating_class.graduating_class %></h2>
+        </div>
+      </div>
+      <div class="panel-body">
+        <% if @graduating_class_users.present? %>
+          <% @graduating_class_users.each do |user| %>
+            <%= link_to user_path(user), class: 'user-link' do %>
+              <div class="panel panel-default">
+                <div class="panel-heading user-index">
+                  <div class="user-picture user-inf">
+                    <%= image_tag user.image_url %>
+                  </div>
+
+                  <div class="user-name user-inf">
+                    <h3><%= user.name %></h3>
+                  </div>
+
+                  <div class="user-gender user-inf">
+                    <h3>性別: <%= user.gender %></h3>
+                  </div>
+
+                  <div class="user-birthplace user-inf">
+                    <h3>出身地: <%= user.birthplace %></h3>
+                  </div>
+
+                  <div class="user-industry user-inf">
+                    <h3>業界: <%= user.industry %></h3>
+                  </div>
+
+                  <div class="user-company user-inf">
+                    <h3>企業: <%= user.company %></h3>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        <% else %>
+          <div class="col-md-offset-1">
+            <h3>現在、<%= @graduating_class.graduating_class %>に登録されている方はいません。</h3>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+<% end %>

@@ -1,4 +1,17 @@
 class UsersController < ApplicationController
+
+  def index
+    @users = User.all
+    if params[:graduating_class_id].present?
+      @graduating_class = GraduatingClass.find(params[:graduating_class_id])
+      @graduating_class_users = @users.get_by_graduating_class params[:graduating_class_id]
+    end
+  end
+
+  def show
+    @user = User.find(params[:id])
+  end
+
   def edit
     @user = User.find(params[:id])
   end

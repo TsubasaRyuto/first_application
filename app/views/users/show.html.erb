@@ -1,0 +1,61 @@
+<div class="page-header">
+  <h1>Your profile</h1>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading show-user-inf">
+    <div class="user-picture user-inf">
+      <%= image_tag @user.image_url %>
+    </div>
+
+    <div class="user-name user-inf">
+      <h3><%= @user.name %></h3>
+    </div>
+
+    <div class="user-gender user-inf">
+      <h3>性別: <%= @user.gender %></h3>
+    </div>
+
+    <div class="user-birthplace user-inf">
+      <h3>出身地: <%= @user.birthplace %></h3>
+    </div>
+
+    <div class="user-industry user-inf">
+      <h3>業界: <%= @user.industry %></h3>
+    </div>
+
+    <div class="user-company user-inf">
+      <h3>企業: <%= @user.company %></h3>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="panel col-md-6 col-md-offset-3">
+      <div class="main-panel user-other-inf">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>力になれること</h3>
+          </div>
+
+          <div class="panel-body">
+            <div class="panel">
+              <%= @user.useful_things %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-panel">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>その他の情報</h3>
+          </div>
+
+          <div class="panel-body">
+            <div class="panel">
+              <%= @user.note %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
