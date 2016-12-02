@@ -70,13 +70,13 @@
         </div>
 
         <div class="form-group">
-          <h4><%= f.label :あなたが力になれる事 %></h4>
-          <%= f.text_area :useful_things, rows: 10, class: 'form-control' %>
+          <h4><%= f.label :あなたが力になれる事 %><span id="count-useful-things"></span></h4>
+          <%= f.text_area :useful_things, rows: 10, class: 'form-control useful-things-textarea' %>
         </div>
 
         <div class="form-group">
-          <h4><%= f.label :あなたをより詳しく %></h4>
-          <%= f.text_area :note, maxlength: 500, rows: 10, class: 'form-control' %>
+          <h4><%= f.label :あなたをより詳しく %><span id="count-note"></span></h4>
+          <%= f.text_area :note, maxlength: 500, rows: 10, class: 'form-control note-textarea' %>
         </div>
 
         <div class="form-group">
