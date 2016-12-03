@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h1>Your profile</h1>
+  <h1>Profile</h1>
 </div>
 <div class="panel panel-default">
   <div class="panel-heading show-user-inf">
@@ -37,7 +37,7 @@
 
           <div class="panel-body">
             <div class="panel">
-              <%= @user.useful_things %>
+              <%= simple_format(@user.useful_things) %>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@
 
           <div class="panel-body">
             <div class="panel">
-              <%= @user.note %>
+              <%= simple_format(@user.note) %>
             </div>
           </div>
         </div>
