@@ -24,8 +24,18 @@ body {
   font-style: italic;
 }
 
+// page header
 header {
-   .navbar-brand {
-     color: #006400;
-   }
+  .navbar-brand {
+    color: #006400;
+  }
+  .navbar-header {
+    .navbar-toggle {
+      border-color: #006400;
+
+      .icon-bar {
+        background-color: #006400;
+      }
+    }
+  }
 }

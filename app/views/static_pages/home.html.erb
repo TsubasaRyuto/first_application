@@ -5,7 +5,7 @@
   </div>
   <div class="login-bt">
     <% if logged_in? %>
-      <%= link_to "Log out",  logout_path, method: "delete", class: 'btn btn-primary col-md-4' %>
+      <%= link_to "Log out",  logout_path, method: "delete", class: 'btn btn-primary col-md-4 ' %>
     <% else %>
       <%= link_to 'facebookでログイン', '/auth/facebook', class: 'btn btn-primary col-md-4' %>
     <% end %>
@@ -13,7 +13,7 @@
 </section>
 <section class="home-mess">
   <div class="mess-class">
-    <div class="mess col-md-4">
+    <div class="mess col-md-4 col-xs-12">
       <span class="glyphicon glyphicon-user"></span>
       <p>
         今まで以上に円滑な交流が出来るようになる。
@@ -21,7 +21,7 @@
         <br>この繋がりを上手に利用し合うことができる。
       </p>
     </div>
-    <div class="mess col-md-4">
+    <div class="mess col-md-4 col-xs-12">
       <span class="glyphicon glyphicon-warning-sign"></span>
       <p>
         困った時は助け合い。例えば、就活どうしたらいい？という時は先輩からアドバイスをもらおう。

@@ -2,130 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.main-panel {
-  display: inline-block;
-  width: 100%;
-  height: 50%;
-  padding-bottom: 10px;
-
-  .user-picture {
-    padding: 0;
-
-    width: auto;
-    height: auto;
-    img {
-      border-radius: 5%;
-    }
-  }
-
-  .user-name {
-    font-size: 300%;
-    font-style: italic;
-    font-weight: lighter;
-  }
-}
-
-.form-group {
-  padding-bottom: 5%;
-}
-
-// user show
-.show-user-inf {
-  display: inline-block;
-  width: 100%;
-
-  .user-inf {
-    float: left;
-    padding-left: 5%;
-  }
-
-  .user-picture {
-    width: auto;
-    height: auto;
-    img {
-      border-radius: 5%;
-    }
-  }
-
-  .user-name {
-    font-size: 300%;
-    font-style: italic;
-    font-weight: lighter;
-  }
-}
-
-.user-other-inf {
-  padding-top: 20%;
-}
-
-// user index
-.users {
-  padding-top: 3%;
-
-  .graduating-class-index {
+/*===============================================
+●style.css 画面の横幅が769px以上　pc対応
+===============================================*/
+@media screen and (min-width: 769px) {
+  // all action
+  .main-panel {
     display: inline-block;
     width: 100%;
-
-    .gc-head {
-      float: left;
-
-      li {
-        list-style: none;
-        float: left;
-        font-size: 150%;
-      }
-
-      .btn {
-        margin-left: 8%;
-        margin-top: 3%;
-      }
-    }
-  }
-
-  .panel-body {
-    padding-top: 7%;
-    .graduating-class-list {
-      list-style: none;
-      font-size: 165%;
-      padding-bottom: 5%;
-      text-align: center;
-
-      a {
-        color: #747474;
-
-        &:hover {
-          text-decoration: none;
-          color: #006400;
-        }
-      }
-    }
-  }
-}
-
-.users-list {
-  .user-link {
-    .panel-heading {
-      height: 100%;
-
-      &:hover {
-      background-color: #a9a9a9;
-      color: white;
-      }
-    }
-  }
-  .user-index {
-    display: inline-block;
-    width: 100%;
-
-    .user-inf {
-      float: left;
-      padding-left: 5%;
-    }
+    height: 50%;
+    padding-bottom: 10px;
 
     .user-picture {
+      padding: 0;
       width: auto;
       height: auto;
-
       img {
         border-radius: 5%;
       }
@@ -137,15 +28,442 @@
       font-weight: lighter;
     }
   }
+
+  .form-group {
+    padding-bottom: 5%;
+  }
+
+  // user show
+  .show-user-inf {
+    display: inline-block;
+    width: 100%;
+
+    .user-inf {
+      float: left;
+      padding-left: 5%;
+    }
+
+    .user-picture {
+      width: auto;
+      height: auto;
+      img {
+        border-radius: 5%;
+      }
+    }
+
+    .user-name {
+      font-size: 300%;
+      font-style: italic;
+      font-weight: lighter;
+    }
+  }
+
+  .user-other-inf {
+    padding-top: 20%;
+  }
+
+  // user index
+  .users {
+    padding-top: 3%;
+
+    .graduating-class-index {
+      display: inline-block;
+      width: 100%;
+
+      .gc-head {
+        float: left;
+
+        li {
+          list-style: none;
+          float: left;
+          font-size: 150%;
+        }
+
+        .btn {
+          margin-left: 8%;
+          margin-top: 3%;
+        }
+      }
+    }
+
+    .panel-body {
+      padding-top: 7%;
+      .graduating-class-list {
+        list-style: none;
+        font-size: 180%;
+        padding-bottom: 5%;
+        text-align: center;
+
+        a {
+          color: #747474;
+
+          &:hover {
+            text-decoration: none;
+            color: #006400;
+          }
+        }
+      }
+    }
+  }
+
+  .users-list {
+    .user-link {
+      .panel-heading {
+        height: 100%;
+
+        &:hover {
+        background-color: #a9a9a9;
+        color: white;
+        }
+      }
+    }
+    .user-index {
+      display: inline-block;
+      width: 100%;
+
+      .user-inf {
+        float: left;
+        padding-left: 5%;
+      }
+
+      .user-picture {
+        width: auto;
+        height: auto;
+
+        img {
+          border-radius: 5%;
+        }
+      }
+
+      .user-name {
+        font-size: 300%;
+        font-style: italic;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  // user edit
+  #count-useful-things {
+    margin-left: 50%;
+    font-size: 80%;
+  }
+
+  #count-note {
+    margin-left: 54%;
+    font-size: 80%;
+  }
 }
 
-// user edit
-#count-useful-things {
-  margin-left: 50%;
-  font-size: 80%;
+/*===============================================
+●tablet.css 画面の横幅が768pxまで
+===============================================*/
+@media screen and (max-width: 768px) {
+  // all action
+  .main-panel {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    padding-bottom: 10px;
+
+    .user-picture {
+      padding: 0;
+
+      width: auto;
+      height: auto;
+      img {
+        border-radius: 5%;
+      }
+    }
+
+    .user-name {
+      font-size: 300%;
+      font-style: italic;
+      font-weight: lighter;
+    }
+  }
+
+  .form-group {
+    padding-bottom: 5%;
+  }
+
+  // user show
+  .show-user-inf {
+    display: inline-block;
+    width: 100%;
+
+    .user-inf {
+      float: left;
+      padding-left: 5%;
+    }
+
+    .user-picture {
+      width: auto;
+      height: auto;
+      img {
+        border-radius: 5%;
+      }
+    }
+
+    .user-name {
+      font-size: 300%;
+      font-style: italic;
+      font-weight: lighter;
+    }
+  }
+
+  .user-other-inf {
+    padding-top: 10%;
+  }
+
+  // user index
+  .users {
+    padding-top: 3%;
+
+    .graduating-class-index {
+      display: inline-block;
+      width: 100%;
+
+      .gc-head {
+        float: left;
+
+        li {
+          list-style: none;
+          float: left;
+          font-size: 150%;
+        }
+
+        .btn {
+          margin-left: 8%;
+          margin-top: 3%;
+        }
+      }
+    }
+
+    .panel-body {
+      padding-top: 7%;
+      .graduating-class-list {
+        list-style: none;
+        font-size: 165%;
+        padding-bottom: 5%;
+        text-align: center;
+
+        a {
+          color: #747474;
+
+          &:hover {
+            text-decoration: none;
+            color: #006400;
+          }
+        }
+      }
+    }
+  }
+
+  .users-list {
+    .user-link {
+      .panel-heading {
+        height: 100%;
+
+        &:hover {
+        background-color: #a9a9a9;
+        color: white;
+        }
+      }
+    }
+    .user-index {
+      display: inline-block;
+      width: 100%;
+
+      .user-inf {
+        float: left;
+        padding-left: 5%;
+      }
+
+      .user-picture {
+        width: auto;
+        height: auto;
+
+        img {
+          border-radius: 5%;
+        }
+      }
+
+      .user-name {
+        font-size: 300%;
+        font-style: italic;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  // user edit
+  #count-useful-things {
+    margin-left: 50%;
+    font-size: 80%;
+  }
+
+  #count-note {
+    margin-left: 54%;
+    font-size: 80%;
+  }
 }
 
-#count-note {
-  margin-left: 54%;
-  font-size: 80%;
+/*===============================================
+●smart.css  画面の横幅が640pxまで sp対応
+===============================================*/
+@media screen and (max-width:640px) {
+  // all action
+  .main-panel {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    padding-bottom: 10px;
+
+    .user-picture {
+      padding: 0;
+      width: auto;
+      height: auto;
+      img {
+        border-radius: 5%;
+      }
+    }
+
+    .user-name {
+      font-size: 300%;
+      font-style: italic;
+      font-weight: lighter;
+    }
+  }
+
+  .form-group {
+    padding-bottom: 5%;
+  }
+
+  // user show
+  .show-user-inf {
+    display: inline-block;
+    width: 100%;
+
+    .user-inf {
+      float: left;
+      padding-left: 5%;
+    }
+
+    .user-picture {
+      width: auto;
+      height: auto;
+      img {
+        border-radius: 5%;
+      }
+    }
+
+    .user-name {
+      font-size: 300%;
+      font-style: italic;
+      font-weight: lighter;
+    }
+  }
+
+  .user-other-inf {
+    padding-top: 10%;
+  }
+
+  // user index
+  .users {
+    padding-top: 3%;
+
+    .graduating-class-index {
+      display: inline-block;
+      width: 100%;
+
+      .gc-head {
+        float: left;
+
+        li {
+          list-style: none;
+          float: left;
+          font-size: 150%;
+        }
+
+        .btn {
+          margin-left: 8%;
+          margin-top: 3%;
+        }
+      }
+    }
+
+    .panel-body {
+      padding-top: 7%;
+
+      ul {
+        padding: 0;
+
+        .graduating-class-list {
+          list-style: none;
+          font-size: 190%;
+          padding-bottom: 5%;
+
+          a {
+            color: #747474;
+          }
+        }
+      }
+    }
+  }
+
+  .users-list {
+    .user-link {
+      .panel-heading {
+        height: 100%;
+
+        &:hover {
+        background-color: #a9a9a9;
+        color: white;
+        }
+      }
+    }
+    .user-index {
+      display: inline-block;
+      width: 100%;
+
+      .user-inf {
+        h3 {
+          font-size: 130%;
+        }
+      }
+
+      .user-picture {
+        width: auto;
+        height: auto;
+
+        img {
+          border-radius: 5%;
+        }
+      }
+
+      .user-name {
+        font-size: 300%;
+        font-style: italic;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  // user edit
+  .edit-user {
+    h1 {
+      font-size: 130%;
+      margin-bottom: 10%;
+    }
+    #count-useful-things {
+      margin-left: 50%;
+      font-size: 80%;
+    }
+
+    #count-note {
+      margin-left: 54%;
+      font-size: 80%;
+    }
+  }
 }
