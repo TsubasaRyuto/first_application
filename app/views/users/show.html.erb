@@ -3,27 +3,27 @@
 </div>
 <div class="panel panel-default">
   <div class="panel-heading show-user-inf">
-    <div class="user-picture user-inf">
+    <div class="user-picture user-inf col-sm-3">
       <%= image_tag @user.image_url %>
     </div>
 
-    <div class="user-name user-inf">
+    <div class="user-name user-inf col-xs-9 col-sm-9 ">
       <h3><%= @user.name %></h3>
     </div>
 
-    <div class="user-gender user-inf">
+    <div class="user-gender user-inf col-xs-12 col-sm-6">
       <h3>性別: <%= @user.gender %></h3>
     </div>
 
-    <div class="user-birthplace user-inf">
+    <div class="user-birthplace user-inf col-xs-12 col-sm-6">
       <h3>出身地: <%= @user.birthplace %></h3>
     </div>
 
-    <div class="user-industry user-inf">
+    <div class="user-industry user-inf col-xs-12 col-sm-6">
       <h3>業界: <%= @user.industry %></h3>
     </div>
 
-    <div class="user-company user-inf">
+    <div class="user-company user-inf col-xs-12 col-sm-6">
       <h3>企業: <%= @user.company %></h3>
     </div>
   </div>
@@ -58,7 +58,7 @@
       </div>
 
       <% if current_user %>
-        <%= link_to 'Edit profile', edit_user_path(current_user), class: 'btn btn-default col-md-12' %>
+        <%= link_to 'Edit profile', edit_user_path(current_user), class: 'btn btn-default col-md-12 col-xs-12' %>
       <% end %>
     </div>
   </div>
