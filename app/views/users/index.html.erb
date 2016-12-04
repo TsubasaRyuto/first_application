@@ -6,10 +6,10 @@
       </div>
     </div>
     <div class="panel-body">
-      <section class="graduating-class-list" id="gcl">
+      <section class="graduating-class" id="gcl">
         <ul>
           <% GraduatingClass.all.map{ |o| [o.graduating_class, o.id] }.each do |index| %>
-            <li class="col-md-4 graduating-class-list">
+            <li class="col-md-4 col-xl-12 col-sm-6 graduating-class-list">
               <%= link_to "#{index[0]}", users_path(graduating_class_id: index[1]) %>
             </li>
           <% end %>
@@ -33,27 +33,27 @@
             <%= link_to user_path(user), class: 'user-link' do %>
               <div class="panel panel-default">
                 <div class="panel-heading user-index">
-                  <div class="user-picture user-inf">
+                  <div class="user-picture user-inf col-sm-3">
                     <%= image_tag user.image_url %>
                   </div>
 
-                  <div class="user-name user-inf">
+                  <div class="user-name user-inf col-sm-9">
                     <h3><%= user.name %></h3>
                   </div>
 
-                  <div class="user-gender user-inf">
+                  <div class="user-gender user-inf col-xs-12 col-sm-6 col-md-3">
                     <h3>性別: <%= user.gender %></h3>
                   </div>
 
-                  <div class="user-birthplace user-inf">
+                  <div class="user-birthplace user-inf col-xs-12 col-sm-6">
                     <h3>出身地: <%= user.birthplace %></h3>
                   </div>
 
-                  <div class="user-industry user-inf">
+                  <div class="user-industry user-inf col-xs-12 col-sm-6">
                     <h3>業界: <%= user.industry %></h3>
                   </div>
 
-                  <div class="user-company user-inf">
+                  <div class="user-company user-inf col-xs-12 col-sm-6">
                     <h3>企業: <%= user.company %></h3>
                   </div>
                 </div>
