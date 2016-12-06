@@ -3,13 +3,15 @@
     <h3>I ♥ Mゼミ</h3>
     <p>北海道での出会いを大切に。。。</p>
   </div>
-  <div class="login-bt">
-    <% if logged_in? %>
+  <% if logged_in? %>
+    <div class="logout-bt">
       <%= link_to "Log out",  logout_path, method: "delete", class: 'btn btn-primary col-md-4 ' %>
-    <% else %>
+    </div>
+  <% else %>
+    <div class="login-bt">
       <%= link_to 'facebookでログイン', '/auth/facebook', class: 'btn btn-primary col-md-4' %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </section>
 <section class="home-mess">
   <div class="mess-class">

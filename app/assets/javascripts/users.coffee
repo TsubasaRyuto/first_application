@@ -31,6 +31,6 @@ $ ->
       $('#count-note').html(countMax - thisValueLength).removeClass("text-danger")
       $('#count-note').css({color:'#000'})
     else
-      $('#count-note').html(countMax - thisValueLength).removeClass("text-danger")
+      $('#count-note').html(countMax - thisValueLength).addClass("text-danger")
       $('#count-note').css({color:'#f00'})
   ).keyup()
