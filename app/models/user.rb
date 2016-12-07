@@ -7,10 +7,8 @@
 #  provider            :string(255)      not null
 #  uid                 :string(255)      not null
 #  name                :string(255)      not null
-#  nickname            :string(255)
 #  email               :string(255)
 #  gender              :integer
-#  url                 :string(255)
 #  image_url           :string(255)
 #  birthplace          :integer
 #  industry            :string(255)
@@ -52,18 +50,12 @@ class User < ApplicationRecord
     provider = auth_hash[:provider]
     uid = auth_hash[:uid]
     name = auth_hash[:info][:name]
-    nickname = auth_hash[:extra][:raw_info][:user_name]
     email = auth_hash[:info][:email]
-    gender = auth_hash[:extra][:raw_info][:gender]
-    url = auth_hash[:extra][:raw_info][:link]
     image_url = auth_hash[:info][:image]
 
     User.find_or_create_by(provider: provider, uid: uid) do |user|
       user.name = name
-      user.nickname = nickname
       user.email = email
-      user.gender = gender
-      user.url = url
       user.image_url = image_url
     end
   end

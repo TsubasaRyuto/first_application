@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161123000828) do
+ActiveRecord::Schema.define(version: 20161207152925) do
 
   create_table "graduating_classes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "graduating_class", null: false
@@ -23,10 +23,8 @@ ActiveRecord::Schema.define(version: 20161123000828) do
     t.string   "provider",                          null: false
     t.string   "uid",                               null: false
     t.string   "name",                              null: false
-    t.string   "nickname"
     t.string   "email"
     t.integer  "gender"
-    t.string   "url"
     t.string   "image_url"
     t.integer  "birthplace"
     t.string   "industry"
