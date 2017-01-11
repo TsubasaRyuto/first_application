@@ -14,4 +14,8 @@ class SessionsController < ApplicationController
     logout if logged_in?
     redirect_to  root_path, notice: 'ログアウトしました'
   end
+
+  def auth_failure
+    render :status => 500
+  end
 end
