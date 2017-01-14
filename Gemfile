@@ -22,6 +22,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'mysql2',     '0.4.5'
   gem 'rspec-rails', '~> 3.5.2'
+  gem 'rails-controller-testing', '0.0.3'
   gem 'pry-byebug', '~> 3.4.0'
   gem 'rubocop', '~> 0.40.0', require: false
   gem 'factory_girl_rails', '~> 4.7.0'
