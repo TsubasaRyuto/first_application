@@ -15,7 +15,7 @@ RSpec.describe UsersController, type: :controller do
 
       it 'should update' do
         patch :update, params: { id: user, user: { gender: gender, graduating_class_id: graduating_class, birthplace: birthplace, industry: industry, company: company, useful_things: useful_things, note: note } }
-        expect(response).to redirect_to root_path
+        expect(response).to redirect_to user_path
       end
     end
 
@@ -26,7 +26,7 @@ RSpec.describe UsersController, type: :controller do
 
       it 'should not update' do
         patch :update, params: { id: user, user: { gender: gender, birthplace: birthplace } }
-        expect(response).to redirect_to edit_user_path
+        expect(response).to render_template(:tedit)
       end
     end
   end
